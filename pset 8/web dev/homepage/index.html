@@ -1,0 +1,104 @@
+hj<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>My Webpage</title>
+
+    </head>
+        <button class="tablink" onclick="openPage('About', this, 'grey')" id="defaultOpen" >About Me</button>
+        <button class="tablink" onclick="openPage('Work', this, 'dimgrey')">Work Experience</button>
+        <button class="tablink" onclick="openPage('Study', this, 'slategrey')">Eduucation and Training</button>
+        <button class="tablink" onclick="openPage('Hobby', this, 'dimgrey')">Hobies and Interest</button>
+
+        <div id="About" class="tabcontent">
+         <h1>About Me</h1>
+          <p>
+              My name is Sujit Thapa and i am from Nepal. I am currently studying MSc in International Information System in Germany. I am a self-motivator
+              and strive hard to reach my set goals. I am outgoing, happy and positive person who works both independently and in teams. Similarly, I am able to work in cross-cultural and cross-functional environment.
+          </p>
+            <img class="image" src="cv.jpg" alt="My CV Picture">
+            <img class="image" src="germy.jpg" alt="My Classmates">
+            <img class="image" src="npl.jpg" alt="My Hometowns">
+        </div>
+
+        <div id="Work" class="tabcontent">
+          <h1>Work Experience</h1>
+          <ol>
+              <li class="list-group-item disabled" aria-disabled="true">Internship -Customer service representative <a href ="https://globalimebank.com/">(Global IME Bank Limited) 08/2015–10/2015 </a>
+              <li class="list-group-item disabled" aria-disabled="true">Internship -Finance and Accounting Department<a href ="https://www.suryalife.com/"> (Suryalife Insurance Company Limited)  05/2016–07/2016 </a>
+              <li class="list-group-item disabled" aria-disabled="true">Juniour Assistant Finance and Accounting Department <a href ="https://www.suryalife.com/">(Suryalife Insurance Company Limited) 07/2016–09/2018 </a>
+          </ol>
+            <img class="image" src="SLIC.JPG" alt="Surya Life Insurance Company Ltd">
+            <img class="image" src="global.jpg" alt="Global IME Bank Ltd">
+        </div>
+
+        <div id="Study" class="tabcontent">
+          <h1>Edducation and Training</h1>
+          <ol>
+              <li class="list-group-item disabled" aria-disabled="true">High School - <a href ="https://www.smcollege.edu.np/">Sagarmatha Multiple Colege 2011</a>
+              <li class="list-group-item disabled" aria-disabled="true">Bachelor in Business Administration - <a href ="http://www.purbanchaluniversity.edu.np/">Purbanchal University 2012-2016 </a>
+              <li class="list-group-item disabled" aria-disabled="true">Master in Development Economics and International Studies - <a href = "https://www.fau.eu/">Friedrich Alexander University 2018-2021</a>
+              <li class="list-group-item active">MSc. International Information System -<a href = "https://www.fau.eu/">Friedrich Alexander University 2020-Present</a>
+          </ol>
+            <img class="image" src="sagarmatha.jpg" alt="Sagarmatha Mutiple College">
+            <img class="image" src="purbanchal.jpg" alt="Purbanchal University">
+            <img class="image" src="fau.jpg" alt="Friedrich Alexander University">
+        </div>
+
+        <div id="Hobby" class="tabcontent">
+          <h1>Hobies and Interest</h1>
+          <ul>
+              <li>Sports </li>
+              <li>Music-<a href="http://nepathya.com.np/">Nepathya</a>
+              <li>Language</li>
+          </ul>
+          <table class="table">
+              <tr>
+                  <th>Language <th>
+                  <th>Level <th>
+              </tr>
+              <tr>
+                  <td>Nepali<td>
+                  <td>Mother toungue<td>
+              </tr>
+              <tr>
+                  <td>English<td>
+                  <td>Fluent<td>
+              </tr>
+              <tr>
+                  <td>German<td>
+                  <td>B1 level<td>
+              </tr>
+          </table>
+        </div>
+        <script>
+            function openPage(pageName, elmnt, color) {
+              // Hide all elements with class="tabcontent" by default */
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+
+              // Remove the background color of all tablinks/buttons
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+
+              // Show the specific tab content
+              document.getElementById(pageName).style.display = "block";
+
+              // Add the specific color to the button used to open the tab content
+              elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+
+body, html {
+    height: 100%;
+    margin: 1px;
+    font-family: Cursive;
+  }
+  
+  
+  .tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #888;
+  }
+  
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 85px 15px;
+    height: 100%;
+  }
+  
+  #About {background-color: grey;}
+  #Work {background-color: dimgrey;}
+  #Study {background-color: slategrey;}
+  #Hobby {background-color: dimgrey;}
+  
+  
+  .image {   border: 1px solid #ddd;
+              border-radius: 4px;
+              padding: 5px;
+              width: 200px;
+  }
+  .table {
+    width: 25%;
+  }
+  
+  
