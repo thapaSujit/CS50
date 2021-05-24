@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-top ul {
+    margin: 0;
+}
+
+.nav-top li {
+    display: inline;
+}
+
+.nav-top a {
+    display: inline-block;
+    padding: .6em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-top a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.nav-top{
+    text-align: center;
+    font-size:1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+
+}
+
+.nav-top li {
+    padding: 0 5%;
+}
+
+.top-of-the-page {
+    background: url("background.jpg") 70% 70% / 100% no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+
+}
+
+.heading {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    color: rgb(169, 169, 169);
+    font-weight: bolder;
+}
+
+
+.content {
+    margin: 1.5em;
+    padding: 0 1.5em;
+    width: auto;
+}
+
+.content-image{
+    height:150px;
+    width: 150px;
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.section-heading {
+    color:#333;
+    text-decoration: underline;
+}
+
+
+.main-footer {
+    background-color: #56ccf2;
+    color: white;
+    padding: 0 0;
+}
+
+.main-footer-container{
+    display: flex;
+}
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.nav-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.heading-foot {
+    text-align: left;
+    padding: .6em;
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(220, 220, 220);
+    font-weight: bolder;
+}
+.main-footer{
+    background: url("top-new.jpg") 30% 30% / 100% no-repeat;
+    background-size: cover;
+}
+
+.content p {
+    word-spacing: 15px;
+    margin: 2em 1em 2em 1em;
+    padding: 1.5em 0.5em 1.5em 0.5em;
+}
+.change{
+    float: right;
+}
+
+.layout-images {
+    display: block;
+    max-width: 50%;
+    height: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-right: 16px;
+  font-size: 1.2em;
+  margin-top: 25px;
+}
+
+
+
+.form input[type=submit]{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+}
+
+
